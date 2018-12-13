@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<link><head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <script src="script.js"> </script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body onload="">
+<div id="main">
+<h1> HANGMAN</h1>
+<div> select a difficulty </div>
+<select id="level">
+    <option>easy </option>
+    <option> medium</option>
+    <option> hard </option>
+    <option>Eastern European soccer players</option>
+</select>
+<button id="play" onclick="makeWord()">play</button>
+<br>
+<br>
+<input id="guess" type="text" placeholder="guess a letter">
+<button id =enter onclick="guessLetter()"> enter your guess</button>
+<div id="answer"> </div>
+<div id="guessedltrs"></div>
+<div id="lives"></div>
+<div id="win/lose"> </div>
+<img id="img">
+    <br>
+    <br>
+    <br>
+    <button id="reload" onclick="reload()">reload the page</button>
+</div>
+
+</body>
+</html>
